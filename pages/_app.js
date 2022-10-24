@@ -5,7 +5,7 @@ import {useRouter} from 'next/router';
 
 
 
-const dontUseLayout = ['/signup']
+const dontUseLayout = ['/library', '/dashboard']
 const dontUseFooter = ['/contactuspage']
 
 function MyApp({ Component, pageProps }) {
@@ -28,5 +28,6 @@ function MyApp({ Component, pageProps }) {
     <Layout> <Component {...pageProps} /></Layout>
   )
 }
+
 
 export default MyApp

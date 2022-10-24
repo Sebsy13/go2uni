@@ -23,11 +23,13 @@
 
 .about_text p{
     margin-bottom: 3rem;
+    text-align: justify;
 }
 
 .about_text h2{
     color: var(--primary-color);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    
 }
 
 .about_text a{

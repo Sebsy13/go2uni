@@ -7,10 +7,6 @@ import {FcGoogle} from 'react-icons/fc'
 const Signup = () => {
   return (
     <div>
-    <div className={styles.logo_image}><Link href="/Home" ><Image src="/Images/logo.png" width="48px" height="48px"></Image></Link>
-    <div className={styles.logo_text}>
-            <Link href="/Home"><a href=""><p>GO<span>2</span>UNI</p></a></Link> </div>
-     </div>
       <div className={styles.Signup}>
         <div className={styles.Signup_container}>
         <div className={styles.Signup_Image}>
@@ -43,7 +39,7 @@ const Signup = () => {
                 <input name="submit" value="Register" type="submit" className={styles.reg_col} ></input>
               </dl>
             </form>
-            <p className= {styles.question}>Already have an account? <Link href='/Login'> Log in</Link></p>
+            <p className= {styles.question}>Already have an account?<u><Link href='/Login'> Log in</Link></u></p>
             </div>
             </div>
         </div>

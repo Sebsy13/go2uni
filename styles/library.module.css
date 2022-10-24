@@ -1,0 +1,122 @@
+.library{
+    display: flex;
+    /* flex-wrap: wrap; */
+    box-sizing: border-box;
+}
+
+.main {
+    flex-basis: 80%;
+    padding: 20px;
+    margin-top: 40px;
+}
+.library_bold{
+    font-size: 24px;
+    font-weight: 600;
+}
+.grid_container{
+    margin-top: 5rem;
+    display: grid;
+    width:80%;
+    grid-template-columns: auto auto auto;
+    gap: 6rem;
+    row-gap: 4rem;
+    margin-left: 1rem;
+}
+.book_container{
+    display: block;
+    background-color: white;
+    box-shadow: 1px 1px 4px 0px #757575;
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.text_container{
+    width: 270px;
+    border-radius: 0 0 12px 12px;
+    background-color: var(--primary-color);
+    height: 3rem;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px;
+    /* align-items: center; */
+}
+.top_details{
+    display: flex;
+    /* flex-wrap: nowrap; */
+    margin-left: 1rem;
+}
+.save{
+    right: 3rem;
+    float: right;
+    /* margin-left: 5rem; */
+}
+
+    /* MEDIA QUERIES */
+@media screen and (max-width: 1440px){
+   .main{
+    flex-basis: 80%;
+   } 
+}
+@media screen and (max-width: 1024px) {
+    .library{
+        display: flex;
+    }
+    .main{
+        flex-basis: 70%;
+    }
+    .grid_container {
+        display: grid;
+        gap: 6rem;
+    }
+    .book_container{
+        width: 200;
+    }
+    .text_container{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 900px){
+    .library{
+        display: flex;
+    }
+    .main {
+        flex-basis: 60%;
+    }
+    
+    .grid_container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 3rem;
+    }
+    
+    .book_container {
+        width: 150px;
+    }
+    
+    .text_container {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .library {
+        display: flex;
+    }
+
+    .main {
+        flex-basis: 60%;
+    }
+
+    .grid_container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 3rem;
+    }
+
+    .book_container {
+        width: 150px;
+    }
+
+    .text_container {
+        width: 150px;
+    }
+}

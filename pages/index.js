@@ -43,8 +43,10 @@ export default function Home() {
          
         
          <Reward></Reward> 
+         
 
          <Testimonial></Testimonial>
+
 
          <Subscribe></Subscribe>
          

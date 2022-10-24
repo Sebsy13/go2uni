@@ -88,11 +88,12 @@ const Trend = () => {
     
      <Swiper 
       // install Swiper modules
-      modules={[Navigation, Pagination,A11y]}
+      modules={[Navigation, Pagination,A11y, Autoplay]}
       spaceBetween={10}
       slidesPerView={3}
       navigation
       pagination={{ clickable: true }}
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
 
       breakpoints={{
         //>=340px
@@ -116,8 +117,8 @@ const Trend = () => {
       }}
 
     //   scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+      // onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={() => console.log('slide change')}
     >
 
 

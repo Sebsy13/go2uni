@@ -6,25 +6,25 @@
     float: left;
     margin-left: 10%;
     margin-right: 10%;
-   font-family: Arial, Helvetica, sans-serif;
+   /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .Signup_container{
     display: grid;
     grid-template-columns: 40% 60%;
     grid-gap: 10rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     align-items: center;
     justify-content: space-between;
 }
-.logo_image{
+/* .logo_image{
 width: 48px;
 height: 48px;
-margin-left: 80px;
+margin-left: 50px;
 margin-top: 10px;
-}
+} */
 
-.logo_text {
+/* .logo_text {
     font-size: 16px;
     margin-left: 18px;
     margin-top: 0%;
@@ -35,7 +35,7 @@ margin-top: 10px;
 .logo_text span {
     color: var(--primary-color);
     font-size: 24px;
-    padding: 1px 1px;}
+    padding: 1px 1px;} */
 
 
 .Signup_bold {
@@ -44,7 +44,7 @@ margin-top: 10px;
     font-weight:700 !important;
     font-size: 24px;
     margin-bottom: 5%;
-    margin-top: 0% !important;
+    /* margin-top: 0% !important;  */
     cursor: default;
 }
 
@@ -62,6 +62,7 @@ margin-top: 10px;
     display: flex;
     gap: 12px;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -97,7 +98,7 @@ opacity: 0.5;
     cursor: default;
 }
 .FormInput{
-    width: 50%;
+    width: 40%;
     margin-left: 0%;
     float: left;
     justify-content: center !important;
@@ -146,14 +147,14 @@ margin-bottom: 3rem;
 .reg_col {
     background-color: #fabd17;
     margin-top: 60px;
-    width: 400px;
+    width: 350px;
     height: 40px;
     justify-content: center;
     border-color: #fabd17;
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 200;
+    /* font-weight: 100; */
     font-weight: bold !important;
 }
 
@@ -163,8 +164,8 @@ margin-bottom: 3rem;
 }
 
 .question {
-    font-size: 13px;
-    font-style: oblique;
+    font-size: 14px;
+    font-style: normal;
     padding-top: 7%;
     text-align: center;
     cursor: default;
@@ -204,7 +205,6 @@ margin-bottom: 3rem;
 
     .Signup {
         width: 100%;
-        height: fit-content;
     }
 
     .Signup_bold {
@@ -213,6 +213,10 @@ margin-bottom: 3rem;
 }
 
 @media screen and (max-width:780px) {
+    .Signup {
+        width: 100%;
+    }
+
     .Signup_container {
         display: block;
         align-content: center;
@@ -229,23 +233,93 @@ margin-bottom: 3rem;
 
 
 @media screen and (max-width:500px) {
+    .Signup {
+            width: 100%;
+            margin-left: 5%;
+            margin-right: 5%;
+            align-items: center;
+    }
+
+    .Signup_container {
+            display: block;
+            align-content: center;
+        }
+
     .FormInput {
         width: 100%;
-        height: fit-content;
+        align-items: center;
     }
-}
 
-
-@media screen and (max-width:400px){
-    .FormInput {
-            width: 150%;
-            height: fit-content;
+        .Signup_Image {
+            display: none;
         }
 }
 
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width:400px){
+.Signup {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        align-items: center;
+    }
+
+    .Signup_container {
+        display: block;
+        align-content: center;
+    }
+
     .FormInput {
-        width: 200%
+        width: 100%;
+        align-items: center;
+    }
+
+    .Signup_Image {
+        display: none;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .Signup {
+            width: 100%;
+            margin-left: 5%;
+            margin-right: 5%;
+            align-items: center;
+        }
+    
+        .Signup_container {
+            display: block;
+            align-content: center;
+        }
+    
+        .FormInput {
+            width: 100%;
+            align-items: center;
+        }
+    
+        .Signup_Image {
+            display: none;
+        }
+    }
+
+        @media screen and (max-width: 300px) {
+            .Signup {
+                width: 100%;
+                align-items: center;
+            }
+    
+            .Signup_container {
+                width: 100%;
+                display: block;
+                align-content: center;
+            }
+    
+            .FormInput {
+                width: 100%;
+                align-items: center;
+            }
+    
+            .Signup_Image {
+                display: none;
+            }
+        }

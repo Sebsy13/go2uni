@@ -1,0 +1,139 @@
+.dashboard {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.main {
+    flex-basis: 80%;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.dashboard_bold {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.text_container{
+    font-size: 24px;
+    padding-top: 1.5rem;
+    color: white;
+}
+
+.box_container {
+    display: flex;
+    gap: 3rem;
+    width: 65rem;
+    border-radius: 12px 12px 12px 12px;
+    background-color: var(--primary-color);
+    height: 6rem;
+    /* margin: auto; */
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 36px;
+}
+
+.emoji{
+    margin-top: 2rem;
+    align-self: center;
+    margin-left: 2rem;
+}
+
+.line1{
+    width: 25rem;
+    height: 0.2rem;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: 2px;
+}
+
+.line2 {
+    width:10rem;
+    height: 0.2rem;
+    background-color: black;
+    margin-top: 1rem;
+    border-radius: 2px;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    /* gap: 0.5rem; */
+    margin-top: 3rem;
+}
+
+.calendar_container {
+    display: block;
+    width: 5rem;
+    height: 4rem;
+    font-size: 18px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #c4c4c4;
+    box-shadow: 1px 1px 2px 0px #757575;
+    text-align: center;  
+}
+
+.booking{
+    width: 12rem;
+    height: 2.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px 0px #757575;
+    margin: auto;
+    font-size: 12px;
+        text-align: center;
+}
+
+.yellow_border{
+    width: 14rem;
+    height: 4rem;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    justify-content: center;
+    box-shadow: 1px 1px 2px 0px #757575;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1440px){
+ .dashboard{
+    display: flex;
+ }   
+}
+@media screen and (max-width: 1024px) {
+    .dashboard {
+        display: flex;
+    }
+}
+@media screen and (max-width: 768px) {
+    .dashboard {
+        display: flex;
+    }
+        .box_container{
+            width: 27rem;
+            gap: 1rem;
+            padding-left: 12px;
+        }
+        .text_container{
+            font-size: 18px;
+        }
+        .sidebar{
+            flex-basis: 15%;
+        }
+        .line1 {
+            width: 10rem;
+        }
+        
+        .line2 {
+            width: 4rem;
+        }
+        .emoji {
+            margin-top: 2rem;
+            margin-left: 0.5rem;
+                }
+}
+@media screen and (max-width: 425px){
+    .sidebar{
+        display: none;
+    }
+}

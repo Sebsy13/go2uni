@@ -32,7 +32,7 @@
 .form_box {
         width: 400px;
         height: 32px;
-        border-color: #fabd17;
+        border-color: var(--primary-color);
         border-radius: 6px;
         margin-bottom: 16px;
         justify-content: left;
@@ -43,7 +43,7 @@
         height: 150px;
         padding: 20px;
         box-sizing: border-box;
-        border-color: #fabd17;
+        border-color: var(--primary-color);
         border-radius: 6px;
         margin-bottom: 16px;
         resize: none;
